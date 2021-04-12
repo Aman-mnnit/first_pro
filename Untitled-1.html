@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAN'S FITNESS CLUB</title>
+</head>
+<style>
+    body{
+        color:white;
+        margin: 0px;
+        padding:0px;
+        background: url('image/btr.jpg');
+    }
+    .left{
+        display:inline-block;
+        position: absolute;
+        left:34px;
+        top: 20px;
+    }
+    .left img{
+        width:90px;
+        filter: 100%;
+        padding-left: 5px;
+    }
+    .left div{
+        text-align: center;
+        font-size: medium;
+    }
+
+    .mid{
+        display:block;
+        width: 55%;
+        margin:25px auto;
+        color: black;
+    }
+    .right{
+        display:inline-block;
+        position:absolute;
+        right: 34px;
+        top:25px;
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        
+        display:inline-block;
+        font-size:35px;
+        padding: 5px;
+        color: black;
+    }
+    .navbar li a{
+        color:black;
+        text-decoration: none;
+        padding: 34px 5px;
+    }
+     .navbar li a:hover,.navbar li a.active{
+        color:grey;
+        text-decoration:underline;
+    }
+    .btn{
+        margin: 2px 9px;
+        background-color: grey;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+          
+     }
+    .btn:hover{
+        color: yellow;
+    }
+    .container{
+        margin: 106px 80px;
+        padding:75px;
+        width:33%;
+        border-radius: 15px;
+    }
+    .form-group input {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+        text-align: center;
+        display: block;
+        width:300px;
+        padding: 6px;
+        margin: 11px auto;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .form-group button{
+        display:block;
+        background-color: greenyellow;
+        color: khaki;
+        padding: 4px 14px;
+        /* border: 2px solid grey; */
+        border-radius: 10px;
+        font-size: 20px;
+        margin:auto;
+    }
+    .container button{
+        display: block;
+        width:74%;
+        margin:20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+                <img src="image/logo.png">
+                <div>aman fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href ="#"class="active" >home</a></li>
+                <li><a href ="#">about</a></li>
+               <li><a href ="#">fitness calculator</a></li>
+                <li><a href ="#">conctact us</a></li>
+            </ul>
+        </div>
+        <!-- right bar for button -->
+        <div class="right">
+            <button class="btn">
+                call us now
+            </button>
+            <button class="btn">
+                email us
+            </button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym
+        </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your locality">
+            </div>
+            <button class="btn">submit</button>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
